@@ -1,0 +1,42 @@
+.categories {
+    margin: auto;
+    padding: 0 16px 56px;
+    max-width: 1024px;
+
+    &__header {
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+    .category-item {
+        max-width: 245px;
+        display: flex;
+        margin-top: 12px;
+
+        &__image {
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin: 0;
+        }
+
+        &__details {
+            padding: 0 16px 12px 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .categories__list {
+        justify-content: center;
+    }
+}

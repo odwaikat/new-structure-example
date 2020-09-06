@@ -1,0 +1,17 @@
+.book {
+    img {
+        height: 270px;
+    }
+
+    &__title {
+        font-weight: normal;
+        margin: 8px 0;
+    }
+
+    &__author,
+    &__reviewed-by {
+        color: gray;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
