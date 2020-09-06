@@ -2,7 +2,7 @@ import {requestAPIData} from '../../utils/fetch-utils'
 import {
     loadCategoriesDataAction,
     loadBooksCarouselDataAction
-} from 'actions/homeActions'
+} from 'actions/homeActions/actions'
 
 export const loadCategoriesData = () => dispatch => {
     const url = 'https://api.jsonbin.io/b/5f54eb494d8ce4111389ed99'

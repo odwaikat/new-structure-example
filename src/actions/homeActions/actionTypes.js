@@ -1,0 +1,4 @@
+const NAME = 'Home';
+
+export const LOAD_CATEGORIES_DATA = `${NAME}/LOAD_CATEGORIES_DATA`;
+export const LOAD_CAROUSEL_DATA = `${NAME}/LOAD_CAROUSEL_DATA`;
