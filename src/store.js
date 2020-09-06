@@ -4,9 +4,10 @@ import rootReducer from './reducers/rootReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 
-export default function configureStore(initialState={}) {
+export default function configureStore() {
+    const composeEnhancers = composeWithDevTools({ trace: true, traceLimit: 25 });
     return createStore(
         rootReducer,
-        composeWithDevTools(applyMiddleware(thunk))
+        composeEnhancers(applyMiddleware(thunk))
     );
 }
